@@ -1,0 +1,240 @@
+/* ARRET VIDEO 1:13:16 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --main-color: #081b29;
+    --blue-color: #00abf0;
+    --text-color: #ededed;
+    --text-color2: #edededd8;
+    --animation_slideRight: slideRight 1s ease forwards;
+    --animation_slideLeft: slideLeft .1s ease forwards;
+    --animation_slideTop: slideTop 1s ease forwards;
+    --animation_slideBottom: slideBottom .1s ease forwards;
+    font-size: 1rem;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--main-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 10;
+    width: 100%;
+    padding: 1.25rem 10%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 24.96px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    cursor: default;
+    opacity: 0;
+    animation: var(--animation_slideRight)
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 23.36px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 12.8px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover {
+    color: var(--blue-color);
+}
+
+.home {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 69.92px 10% 0;
+    background: url(./public/w.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom .3s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 1.575rem;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 span {
+    color: var(--blue-color);
+}
+
+.nom_prenom {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: -0.1875rem 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.resumer {
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: .125rem solid var(--blue-color);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: var(--blue-color);
+    text-decoration: none;
+    opacity: 0;
+    animation: slideLeft .1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    transition: .5s ease;
+    margin: 1.875rem .9375rem 1.875rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------ */
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-6.25rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(6.25rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(6.25rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(6.25rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset: 175;
+    }
+}
+
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 75;
+    }
+}
