@@ -112,7 +112,7 @@ body {
 }
 
 .resumer {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -138,9 +138,88 @@ body {
     margin: 1.875rem .9375rem 1.875rem 0;
 }
 
+.home-social a:hover {
+    background: var(--blue-color);
+    color: #1f242d;
+    box-shadow: 0 0 1.15rem var(--blue-color);
+}
 
+.btn-box {
+    display: inline-block;
+    padding: .65rem 1.65rem;
+    background: var(--blue-color);
+    border-radius: .625rem;
+    box-shadow: 0 0 .125rem var(--blue-color);
+    font-size: 1rem;
+    color: #1f242d;
+    letter-spacing: .0625rem;
+    text-decoration: none;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 .3125rem var(--blue-color),
+        0 0 1.5625rem var(--blue-color);
+    transition: .5s ease;
+}
 
+.btn-box:hover {
+    box-shadow: 0 0 .3125rem cyan,
+        0 0 .625rem cyan,
+        0 0 1.25rem cyan,
+        0 0 1.875rem cyan;
 
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Cela permet à l'élément de prendre autant d'espace que possible */
+}
+
+.about-img img {
+    max-width: 39.375rem;
+    height: auto;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 3.75rem;
+}
+
+.about-text h2 span {
+    color: var(--blue-color);
+}
+
+.about-text h4 {
+    font-size: 1.8125rem;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: .9375rem 0 1.875rem;
+}
+
+.about-text p {
+    color: aliceblue;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
 
 
 
