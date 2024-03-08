@@ -1,5 +1,5 @@
 import '/public/style.css'
-import viteLogo from '/public/vite.svg'
+import '/public/circularProgressBar.js'
 import Typed from 'typed.js';
 
 var typed = new Typed(".text", {

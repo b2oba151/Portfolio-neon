@@ -310,6 +310,7 @@ section.skills {
 .container1 {
     width: 50%;
     height: 31.25rem;
+
 }
 
 .heading1 {
@@ -372,25 +373,10 @@ section.skills {
     transform-origin: left;
 }
 
-.progress-line.html span {
-    width: 90%;
+.progress-line span {
+    width: var(--percentage);
 }
 
-.progress-line.css span {
-    width: 80%;
-}
-
-.progress-line.javascript span {
-    width: 60%;
-}
-
-.progress-line.cpp span {
-    width: 50%;
-}
-
-.progress-line.python span {
-    width: 60%;
-}
 
 .progress-line span::after {
     position: absolute;
@@ -444,6 +430,100 @@ section.skills {
 /* ---------------------------------------- */
 
 
+.radial-bars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Ajustez l'espacement entre les éléments selon vos besoins */
+  padding-left: 120px;
+}
+
+.radial-bar {
+  position: relative;
+  width: 50%;
+}
+
+svg {
+  transform: rotate(-90deg);
+}
+
+.progress-bar {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 10;
+}
+
+.path {
+    stroke-width: 10;
+    stroke: #00abf0;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+  animation: progress 2s ease-out forwards;
+}
+
+
+.path-1 {
+    animation: animate-path1 1s linear forwards;
+}
+
+.path-2 {
+    animation: animate-path2 1s linear forwards;
+}
+
+.path-3 {
+    animation: animate-path3 1s linear forwards;
+}
+
+.path-4 {
+    animation: animate-path4 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset:  calc(502 - (502 * var(--percentage) / 100));
+    }
+}
+
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset:  calc(502 - (502 * var(--percentage) / 100));
+    }
+}
+
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset:  calc(502 - (502 * var(--percentage) / 100));
+    }
+}
+
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 75;
+    }
+}
+
+
+.percentage {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text,
+.text2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@keyframes progress {
+  to {
+    stroke-dasharray: var(--percentage), 100;
+  }
+}
 
 
 
