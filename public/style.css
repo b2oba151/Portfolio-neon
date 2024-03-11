@@ -302,15 +302,14 @@ section.skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     padding: 4.6875rem 5.3125rem;
 }
 
 
 .container1 {
     width: 50%;
-    height: 31.25rem;
-
+    padding: .3125rem;
 }
 
 .heading1 {
@@ -368,6 +367,9 @@ section.skills {
     background-color: var(--blue-color);
     position: absolute;
     border-radius: .625rem;
+}
+
+.Technical-bars .bar .progress-line span.animate{
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform: scaleX(0);
     transform-origin: left;
@@ -397,19 +399,19 @@ section.skills {
 }
 
 .progress-line.css span:after {
-    content: "60%";
+    content: "70%";
 }
 
 .progress-line.javascript span:after {
-    content: "85%";
+    content: "70%";
 }
 
 .progress-line.cpp span:after {
-    content: "90%";
+    content: "75%";
 }
 
 .progress-line.python span:after {
-    content: "90%";
+    content: "80%";
 }
 
 
@@ -428,106 +430,34 @@ section.skills {
 }
 
 /* ---------------------------------------- */
-
-
+.container1:nth-of-type(2) {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+}
 .radial-bars {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* Ajustez l'espacement entre les éléments selon vos besoins */
-  padding-left: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .radial-bar {
-  position: relative;
-  width: 50%;
+    flex: 0 0 calc(33.3333% - 1.25rem); /* la largeur des éléments*/
+    margin: .625rem; 
+  }
+
+.radial-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-svg {
-  transform: rotate(-90deg);
-}
-
-.progress-bar {
-  fill: none;
-  stroke: #e0e0e0;
-  stroke-width: 10;
-}
-
-.path {
-    stroke-width: 10;
-    stroke: #00abf0;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-  animation: progress 2s ease-out forwards;
-}
-
-
-.path-1 {
-    animation: animate-path1 1s linear forwards;
-}
-
-.path-2 {
-    animation: animate-path2 1s linear forwards;
-}
-
-.path-3 {
-    animation: animate-path3 1s linear forwards;
-}
-
-.path-4 {
-    animation: animate-path4 1s linear forwards;
-}
-
-@keyframes animate-path1 {
-    100% {
-        stroke-dashoffset:  calc(502 - (502 * var(--percentage) / 100));
-    }
-}
-
-@keyframes animate-path2 {
-    100% {
-        stroke-dashoffset:  calc(502 - (502 * var(--percentage) / 100));
-    }
-}
-
-@keyframes animate-path3 {
-    100% {
-        stroke-dashoffset:  calc(502 - (502 * var(--percentage) / 100));
-    }
-}
-
-@keyframes animate-path4 {
-    100% {
-        stroke-dashoffset: 75;
-    }
-}
-
-
-.percentage {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.text,
-.text2 {
-  margin-top: 10px;
+.radial-bar .text{
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin: 0.625rem;
   text-align: center;
 }
-
-@keyframes progress {
-  to {
-    stroke-dasharray: var(--percentage), 100;
-  }
-}
-
-
-
-
 
 
 /* ------------------------------------ */

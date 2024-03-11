@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+  <script src="public/circularProgressBar.js"></script>
   <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
 </head>
 
@@ -117,7 +117,7 @@
   
   <h1 class="sub-title">Mes <span>Compétences</span></h1>
   <section class="skills">
-    <div class="container1" id="skills">
+    <div class="container1 c1" id="skills">
       <h1 class="heading1">Compétences Techniques</h1>
       <div class="Technical-bars">
         <div class="bar"><i style="color: #f44336" class="bx bxl-html5 tt"></i>
@@ -141,7 +141,7 @@
             <span>JavaScript</span>
           </div>
           <div class="progress-line javascript">
-            <span style="--percentage: 50%;"></span>
+            <span style="--percentage: 70%;"></span>
           </div>
         </div>
         <div class="bar"><i style="color: #ffffff" class="bx bxl-python"></i>
@@ -149,7 +149,7 @@
             <span>Python</span>
           </div>
           <div class="progress-line python">
-            <span style="--percentage: 25%;"></span>
+            <span style="--percentage: 80%;"></span>
           </div>
         </div>
         <div class="bar"><i style="color: #4490e1" class="bx bxl-c-plus-plus"></i>
@@ -163,47 +163,37 @@
       </div>
     </div>
   
-    <div class="container1">
+    <div class="container1 c2">
       <h1 class="heading1">Compétences Professionnelles</h1>
       <div class="radial-bars">
-        <div class="radial-bar" style="--percentage: 90;">
-          <svg x="0px" y="0px" viewBox="0 0 200 200">
-            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">90%</div>
-          <div class="text">Créativité</div>
+        <div class="radial-bar">
+          <div class="pie" data-pie='{ "round": true, "percent": 90, "colorSlice": "#00abf0", "time": 2, "fontColor": "#ededed", "stroke":6, "size":150, "unit":"", "animationOff": false}'></div>
+          <h4 class="text">Creativité</h4>
         </div>
-        <div class="radial-bar" style="--percentage: 65;">
-          <svg x="0px" y="0px" viewBox="0 0 200 200">
-            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">65%</div>
-          <div class="text2">Communication</div>
+        <div class="radial-bar">
+          <div class="pie" data-pie='{ "round": true, "percent": 65, "colorSlice": "#00abf0", "time": 2, "fontColor": "#ededed", "stroke":6, "size":150, "unit":"", "animationOff": false}'></div>
+          <h4 class="text">Communication</h4>
         </div>
-        <div class="radial-bar" style="--percentage: 75;">
-          <svg x="0px" y="0px" viewBox="0 0 200 200">
-            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">75%</div>
-          <div class="text2">Résolution de problèmes</div>
+        <div class="radial-bar">
+          <div class="pie" data-pie='{ "round": true, "percent": 75, "colorSlice": "#00abf0", "time": 2, "fontColor": "#ededed", "stroke":6, "size":150, "unit":"", "animationOff": false}'></div>
+          <h4 class="text">Resolution de problèmes</h4>
         </div>
-        <div class="radial-bar" style="--percentage: 80;">
-          <svg x="0px" y="0px" viewBox="0 0 200 200">
-            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path path-4" cx="100" cy="100" r="80" ></circle>
-          </svg>
-          <div class="percentage">80%</div>
-          <div class="text2">Travail d'équipe</div>
+        <div class="radial-bar">
+          <div class="pie" data-pie='{ "round": true, "percent": 85, "colorSlice": "#00abf0", "time": 2, "fontColor": "#ededed", "stroke":6, "size":150, "unit":"", "animationOff": false}'></div>
+          <h4 class="text">Travail en equipe</h4>
+        </div>
+        <div class="radial-bar">
+          <div class="pie" data-pie='{ "round": true, "percent": 70, "colorSlice": "#00abf0", "time": 2, "fontColor": "#ededed", "stroke":6, "size":150, "unit":"", "animationOff": false}'></div>
+          <h4 class="text">Autonomie</h4>
+        </div>
+        <div class="radial-bar">
+          <div class="pie" data-pie='{ "round": true, "percent": 65, "colorSlice": "#00abf0", "time": 2, "fontColor": "#ededed", "stroke":6, "size":150, "unit":"", "animationOff": false}'></div>
+          <h4 class="text">Gestion de projet</h4>
         </div>
       </div>
     </div>
   </section>
   
-
-
 
   <script type="module" src="/main.js"></script>
 </body>
