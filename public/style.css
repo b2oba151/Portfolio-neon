@@ -40,7 +40,7 @@ body {
 
 .logo {
     position: relative;
-    font-size: 24.96px;
+    font-size: 1.56rem;
     color: var(--text-color);
     text-decoration: none;
     font-weight: 700;
@@ -51,11 +51,11 @@ body {
 
 .navbar a {
     display: inline-block;
-    font-size: 23.36px;
+    font-size: 1.46rem;
     color: var(--text-color);
     text-decoration: none;
     font-weight: 700;
-    margin-left: 12.8px;
+    margin-left: .8rem;
     transition: .3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
@@ -73,7 +73,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    padding: 69.92px 10% 0;
+    padding: 4.37rem 10% 0;
     background: url(./public/w.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -81,11 +81,11 @@ body {
 }
 
 .home-content {
-    max-width: 700px;
+    max-width: 43.75rem;
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom .3s ease forwards;
@@ -460,6 +460,89 @@ section.skills {
 }
 
 
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    padding: 0 2rem;
+    justify-content: space-around;
+    align-items: center
+}
+
+.row {
+    flex: 0 0 calc(32% - 1.25rem); 
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.row img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), #00abf0);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer h5 {
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    color: black;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.layer i {
+    color: var(--blue-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.row:hover img {
+    transform: scale(1.1);
+}
+
+.row:hover .layer {
+    height: 100%;
+}
+
+
+
+
+
 /* ------------------------------------ */
 @keyframes slideRight {
     0% {
@@ -518,3 +601,23 @@ section.skills {
         opacity: 1;
     }
 }
+
+
+/* ------------------------------------ */
+
+@media (min-width: 420px) and (max-width: 1024px) {
+    :root {
+      font-size: .75rem;
+    }
+    .row{
+      flex: 0 0 calc(50% - 1.25rem);
+    }
+  }
+  
+  
+  @media (min-width: 900px) {
+    :root{
+      font-size: 1rem;
+    }
+    
+  }
