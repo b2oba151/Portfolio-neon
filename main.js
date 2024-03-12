@@ -1,5 +1,5 @@
 import '/public/style.css'
-import  { AnimateElementAuScroll } from '/public/annimationscroll';
+import  { AnimateElementAuScroll, scrollToTopButtonShow,copyToClipboard } from '/public/annimationscroll';
 import Typed from 'typed.js';
 
 var typed = new Typed(".text", {
@@ -50,4 +50,6 @@ window.addEventListener('DOMContentLoaded', () => {
   
   
 AnimateElementAuScroll(".Technical-bars .bar .progress-line span", true);
-  
+scrollToTopButtonShow();
+copyToClipboard("copyPhoneNumber");
+

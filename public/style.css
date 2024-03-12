@@ -17,7 +17,7 @@
     --animation_slideLeft: slideLeft .1s ease forwards;
     --animation_slideTop: slideTop 1s ease forwards;
     --animation_slideBottom: slideBottom .1s ease forwards;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 body {
@@ -326,10 +326,10 @@ section.skills {
 
 .bar i {
     font-size: 2.5rem;
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
 }
 .Technical-bars .bar {
-    margin-top: 0px ;
+    margin-top: 0rem ;
 }
 
 .Technical-bars .bar:first-child {
@@ -455,7 +455,7 @@ section.skills {
 .radial-bar .text{
   font-size: 1.125rem;
   font-weight: 800;
-  margin: 0.625rem;
+  margin: .625rem;
   text-align: center;
 }
 
@@ -474,14 +474,14 @@ section.skills {
     flex: 0 0 calc(32% - 1.25rem); 
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: .5rem;
     cursor: pointer;
 }
 
 
 .row img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: .5rem;
     display: block;
     transition: transform 0.5s;
 }
@@ -489,9 +489,9 @@ section.skills {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.2), #00abf0);
+    background: linear-gradient(rgba(255, 255, 255, 0.2), var(--blue-color));
     position: absolute;
-    border-radius: 8px;
+    border-radius: .5rem;
     left: 0;
     bottom: 0;
     overflow: hidden;
@@ -500,15 +500,15 @@ section.skills {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 40px;
+    padding: 0 2.5rem;
     transition: height 0.5s;
 }
 
 .layer h5 {
     color: black;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
-    margin-bottom: 15px;
+    margin-bottom: .9375rem;
 }
 
 .layer p {
@@ -520,11 +520,11 @@ section.skills {
 
 .layer i {
     color: var(--blue-color);
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
     background: white;
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -538,6 +538,195 @@ section.skills {
 .row:hover .layer {
     height: 100%;
 }
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 1.875rem;
+    margin-top: 8.125rem;
+}
+
+.contact-text h2 {
+    font-size: 5.625rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.contact-text h2 span {
+    color: var(--blue-color);
+}
+
+.contact-text h4 {
+    margin: .9375rem 0;
+    color: rgb(228, 228, 228);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.contact-text p {
+    color: rgb(177, 177, 177);
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 2rem;
+}
+
+.contact-list {
+    margin-bottom: 3rem;
+}
+
+.contact-list li {
+    display: block;
+    margin-bottom: .625rem;
+}
+.contact-list i {
+    display: inline-block;
+    margin-bottom: .625rem;
+    margin-right: .625rem;
+    color: var(--blue-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+
+.contact-list li a:hover {
+    transform: scale(1.01) translateY(-0.3125rem);
+    color: var(--blue-color);
+}
+
+.contact-icons i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: .125rem solid var(--blue-color);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: var(--blue-color);
+    text-decoration: none;
+    margin: 1.875rem .9375rem 1.875rem 0;
+    transition: all .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.contact-icons i:hover {
+    background: var(--blue-color);
+    color: #000;
+    box-shadow: 0 0 1.25rem var(--blue-color);
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+form textarea {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: .9375rem;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 13.75rem;
+}
+
+.contact-form form .send {
+    display: inline-block;
+    padding: .75rem 3.75rem;
+    background: var(--blue-color);
+    border-radius: 2.5rem;
+    font-size: 1.125rem;
+    color: #1f242d;
+    letter-spacing: .0625rem;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 .3125rem var(--blue-color),
+        0 0 1.5625rem var(--blue-color);
+
+}
+
+
+.contact-form form .send:hover {
+    box-shadow: 0 0 .3125rem cyan,
+        0 0 1.5625rem cyan,
+        0 0 6.25rem cyan;
+}
+
+.contact-list a {
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer; 
+    outline: none; 
+}
+
+.contact-list a:hover {
+    text-decoration: underline; 
+}
+
+.contact-list a:active {
+    text-decoration: underline; 
+}
+
+.last-text p {
+    text-align: center;
+    width: 100%;
+    padding: 1.5625rem 0;
+    background: rgb(7, 85, 91);
+    font-size: .875rem;
+    letter-spacing: .0625rem;
+    font-weight: 300;
+}
+
+.top {
+    position: fixed;
+    bottom: 2.1rem;
+    right: 1.5rem;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: .625rem;
+    background: var(--blue-color);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: #000;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideRight .1s ease forwards;
+    animation-delay: 0.8s;
+}
+
+
+.top i {
+    color: #000;
+    background: var(--blue-color);
+    font-size: 1.25rem;
+    padding: .625rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3125rem var(--blue-color),
+        0 0 1.5625rem var(--blue-color);
+}
+
+
+
+
+
 
 
 
@@ -605,7 +794,7 @@ section.skills {
 
 /* ------------------------------------ */
 
-@media (min-width: 420px) and (max-width: 1024px) {
+@media (min-width: 26.25rem) and (max-width: 64rem) {
     :root {
       font-size: .75rem;
     }
@@ -615,7 +804,7 @@ section.skills {
   }
   
   
-  @media (min-width: 900px) {
+  @media (min-width: 56.25rem) {
     :root{
       font-size: 1rem;
     }
