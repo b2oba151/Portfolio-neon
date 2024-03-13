@@ -1,0 +1,227 @@
+
+  /*Smartphones (portrait et paysage) :*/
+  @media only screen and (max-width: 480px) {
+    :root {
+      font-size: 10px;
+    }
+    .row{
+      flex: 0 0 calc(50% - 1.25rem);
+    }
+    .home{
+    background: transparent;
+    padding: 1.37rem 10% 0;
+    height: 18vh;
+    }
+    #img_principale{
+      display: block;
+      max-width: 39.375rem;
+      height: auto;
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: .5rem;
+    }
+
+    /* about */
+    .about{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: justify;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .about-img img {
+        margin-top: 50px;
+    }
+
+    /* services */
+    .container {
+        padding: 2.625rem;
+    }
+    .services-list{
+      flex-direction: column;
+    }
+    .services-list div{
+        padding: 2px;
+    }
+    .services-list div i {
+        margin: 1rem 0 1rem 0;
+    }
+
+    /* Competences */
+    section.skills {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.6875rem 2.3125rem;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .container1 {
+        width: 100%;
+        padding: .3125rem;
+    }
+    .heading1 {
+        margin-top: 3.125rem;
+    }
+    .container1:nth-of-type(2) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .radial-bar{
+        flex: 0 0 calc(42% - 0px);
+    }
+
+    /* portfolio */
+    .portfolio-content{
+        margin-top: 0;
+    }
+    .row{
+        flex: 0 0 calc(100%);
+        padding-right: 0 0;
+        justify-content: center;
+    }
+
+    /* contact */
+    .contact {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-text h2 {
+        font-size: 3.75rem;
+        padding: 4.375rem;
+        padding-top: 0;
+        margin-right: 10px;
+    }
+    .contact-text p {
+        margin-right: 20px;
+        text-align: justify;
+    }
+    .contact-list {
+        margin-bottom: 0.2rem;
+    }
+    .contact-icons i {
+        margin-top: 0.3rem;
+    }
+  }
+  
+
+  
+  
+  /*Tablettes :*/
+  @media only screen and (min-width: 500px) and (max-width: 768px) {
+    :root {
+      font-size: 12px;
+    }
+    .row{
+      flex: 0 0 calc(50% - 1.25rem);
+    }
+    .home{
+    background: transparent;
+    padding: 1.37rem 10% 0;
+    height: 28vh;
+    }
+    #img_principale{
+      display: inline-block;
+      max-width: 39.375rem;
+      height: auto;
+      width: 100%;
+      margin-left: 150px;
+      margin-right: 70px;
+      border-radius: .5rem;
+    }
+
+    /* about */
+    .about{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: justify;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .about-img img {
+        margin-top: 50px;
+    }
+
+    /* services */
+    .container {
+        padding: 2.625rem;
+    }
+    .services-list{
+    }
+    .services-list div{
+        padding: 2px;
+        flex: 0 0 calc(50% - 1.25rem);
+    }
+    .services-list div i {
+        margin: 1rem 0 1rem 0;
+    }
+
+    /* Competences */
+    section.skills {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.6875rem 2.3125rem;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .container1 {
+        width: 100%;
+        padding: .3125rem;
+    }
+    .heading1 {
+        margin-top: 3.125rem;
+    }
+    .container1:nth-of-type(2) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .radial-bar{
+        flex: 0 0 calc(42% - 0px);
+    }
+
+    /* portfolio */
+    .portfolio-content{
+        margin-top: 0;
+    }
+    .row{
+        flex: 0 0 calc(50%-1.25rem);
+        padding-right: 0 0;
+        justify-content: center;
+    }
+
+    /* contact */
+    .contact {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-text h2 {
+        font-size: 3.75rem;
+        padding: 4.375rem;
+        padding-top: 0;
+        margin-right: 10px;
+    }
+    .contact-text p {
+        margin-right: 20px;
+        text-align: justify;
+    }
+    .contact-list {
+        margin-bottom: 0.2rem;
+    }
+    .contact-icons i {
+        margin-top: 0.3rem;
+    }
+  }
+  
+  
+  /*Ordinateurs portables et de bureau :*/
+  @media only screen and (min-width: 769px) {
+    /* Styles spécifiques pour les ordinateurs portables et de bureau */
+  }
+  
+  
+  /*Grande résolution (écrans larges) :*/
+  @media only screen and (min-width: 1200px) {
+    /* Styles spécifiques pour les écrans larges */
+  }

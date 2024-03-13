@@ -1,7 +1,7 @@
 import '/public/style.css'
+import '/public/mediaquery.css'
 import  { AnimateElementAuScroll, scrollToTopButtonShow,copyToClipboard } from '/public/annimationscroll';
 import Typed from 'typed.js';
-
 var typed = new Typed(".text", {
     strings: ["Developpeur", "Admin Systèmes et réseaux", "Freelance"],
     typeSpeed: 100,
